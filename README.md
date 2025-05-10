@@ -13,8 +13,7 @@ This project presents a scalable big data pipeline to analyze sentiment in code-
 
 - Develop a scalable preprocessing pipeline using Big Data tools
 - Implement domain-agnostic sentiment classification for Hinglish tweets
-- Achieve efficient indexing with BM25
-- Ensure accurate classification using IndicBERT (LoRA fine-tuned)
+- Ensure accurate classification using IndicBERT
 - Evaluate performance via Accuracy and Weighted F1 Score
 
 ## Technologies Used
@@ -24,8 +23,7 @@ This project presents a scalable big data pipeline to analyze sentiment in code-
 | Data Storage       | Apache HBase, Hadoop HDFS              |
 | Processing         | Spark NLP, PySpark MLlib               |
 | Tokenization & NLP | Ekphrasis, Spark POS models            |
-| Indexing & IR      | BM25-based Retrieval                   |
-| Modeling           | IndicBERT + LoRA (Hinglish support)    |
+| Modeling           | IndicBERT (Hinglish support)           |
 | Evaluation         | Accuracy, F1-Score, IndicGLUE          |
 
 ## Repository Structure
@@ -71,15 +69,11 @@ This project presents a scalable big data pipeline to analyze sentiment in code-
 
 ### 4. Modeling: IndicBERT Fine-Tuning
 
-- Employed Spark NLP’s IndicBERT embeddings with LoRA.
+- Employed Spark NLP’s IndicBERT embeddings.
 - Trained for 50 epochs on GPU with a 70:30 train-test split.
 - Achieved Accuracy: 80.29%, Weighted F1 Score: 80.07%.
 
-### 5. Indexing & Retrieval
-
-- Indexed processed tweets using BM25 for improved semantic matching.
-
-### 6. Evaluation & Visualization
+### 5. Evaluation & Visualization
 
 - Analyzed sentiment distribution, frequent Hinglish terms, and code-mix lengths.
 - Utilized IndicGLUE for multilingual robustness checks.
