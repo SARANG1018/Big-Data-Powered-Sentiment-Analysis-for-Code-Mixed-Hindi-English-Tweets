@@ -11,10 +11,10 @@ This project presents a scalable big data pipeline to analyze sentiment in code-
 
 ## Project Objectives
 
-- Develop a scalable preprocessing pipeline using Big Data tools
-- Implement domain-agnostic sentiment classification for Hinglish tweets
-- Ensure accurate classification using IndicBERT
-- Evaluate performance via Accuracy and Weighted F1 Score
+- Develop a scalable preprocessing pipeline using Big Data tools.
+- Implement domain-agnostic sentiment classification for Hinglish tweets.
+- Ensure accurate classification using IndicBERT.
+- Evaluate performance via Accuracy and Weighted F1 Score.
 
 ## Technologies Used
 
